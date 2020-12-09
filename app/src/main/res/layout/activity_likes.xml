@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/my_likes"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.fragments.MyLikesFragment">
+
+    <RelativeLayout
+        android:id="@+id/feedsTopView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_id"/>
+
+        <TextView
+            android:id="@+id/mlTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="My Likes"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/feedsTopView"
+        android:background="@color/blackTextColor" />
+
+    <RelativeLayout
+        android:id="@+id/mlNoLikesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="22dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/mlNolikesImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            ads:srcCompat="@drawable/no_chat" />
+
+        <TextView
+            android:id="@+id/mlNoLikesTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mlNolikesImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="You haven't liked any ads yet."
+            android:textAlignment="center"
+            android:textColor="@color/blackTextColor"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/likes_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:clipToPadding="false"
+        android:paddingBottom="55dp"
+        android:scrollbars="none" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admobBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ADMOB_BANNER_UNIT_ID">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

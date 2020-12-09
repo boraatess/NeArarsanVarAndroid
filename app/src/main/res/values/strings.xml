@@ -1,0 +1,307 @@
+<resources>
+
+    <!-- IMPORTANT: REPLACE THIS STRING WITH THE NEW NAME YOU'LL GIVE TO THIS APP -->
+    <string name="app_name">Ne Ararsan Var</string>
+
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN BANNER UNIT ID YOU'LL GET FROM http://apps.admob.com -->
+    <string name="ADMOB_BANNER_UNIT_ID">ca-app-pub-3066798903065241~5157850960</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">tThViNZhx716xBdF34wRiyZQ2GD6QFktu7F6elx2</string>
+    <string name="back4app_client_key">Fyhrbi9KnsVyprwoL8S2FODlEWlwRqBeCJRTcvP4</string>
+
+    <!-- IMPORTANT: REPLACE THE STRING BELOW WITH YOUR OWN FACEBOOK APP ID YOU'LL GET ON https://developers.facebook.com/apps/ -->
+    <string name="facebook_app_id">490596851915831</string>
+    <string name="fb_login_protocol_scheme">fb490596851915831</string>
+
+    <!-- BELOW ARE ALL THE TEXTS USED IN THE APP -->
+
+    <!-- Common -->
+    <string name="progress_dialog_loading">Lütfen bekleyin…</string>
+    <string name="gallery_chooser_title">Resim seç</string>
+    <string name="alert_ok_button">Tamam</string>
+    <string name="alert_cancel_button">İptal</string>
+    <string name="not_available_text_placeholder">N/A</string>
+    <string name="filter_condition_new">En Yeni</string>
+    <string name="filter_condition_used">En Eski</string>
+    <string name="geocoder_not_present_error">Geocoder not present!</string>
+    <string name="get_location_failure">Konumunuz alınamadı. \N Ayarlar\'a gidin ve Konum Hizmetinin etkinleştirildiğinden emin olun!</string>
+    <string name="take_video_title">Video Çek</string>
+    <string name="take_picture_title">Resim Çek</string>
+    <string name="select_image_chooser_title">Resim Seç</string>
+    <string name="select_video_chooser_title">Video Seç</string>
+    <string name="no_available_camera_error">Kameraya erişilemiyor.</string>
+    <string name="failed_to_retrieve_photo_error">Fotoğraf alınamadı.</string>
+    <string name="select_image_source_alert_title">Kaynak seç</string>
+    <string name="pick_image_from_gallery_title">Galeriden seç</string>
+    <string name="image_preview_screen_title">ZOOM YAP | Dokun ve Kapat</string>
+    <string name="username_formatted">\@%s</string>
+    <string name="select_option_title">Seçenek seç</string>
+    <string name="watch_video_screen_title">Video izle</string>
+    <string name="map_description">Haritayı hareket ettirebilir ve bir Konum seçmelisiniz veya bu Harita ekranını kapatmalısınız</string>
+    <string name="move_and_zoom_to_set_location">Konumunu seçmek için haritayı oynat</string>
+
+    <!-- Wizard -->
+    <string name="wizard_page1">KOLAYCA ÜRÜNÜ PAYLAŞ\n\nÜrününü kolayca yükle ve hızlıca sat,kirala veya takas et.</string>
+    <string name="wizard_page2">ÜRÜNLERİ KATEGORİLENDİR\n\nHer kategorideki ürünü arayabilir ve paylaşabilirsin.</string>
+    <string name="wizard_page3">DİĞER KULLANICILARLA SOHBET ET\n\nGelişmiş sohbet modülü sayesinde diğer kullanıcılar ile sohbet edebilirsiniz.</string>
+    <string name="wizard_title_activity_image_preview">Resim Önizle</string>
+    <string name="wizard_terms_alert_title">Hizmet Şartlarımızı kabul ediyor musunuz?</string>
+    <string name="wizard_terms_alert_accept">Evet</string>
+    <string name="wizard_terms_alert_read">Hizmet şartlarını oku</string>
+    <string name="wizard_terms_title">Kayıt olabilmek için hizmet şartlarını kabul etmelisiniz</string>
+    <string name="wizard_signup_button">E-mail ile kayıt ol ve ya giriş yap</string>
+
+    <!-- Terms of Use -->
+    <string name="terms_of_use_title">Kullanım Şartları</string>
+
+    <!-- Sign Up -->
+    <string name="sign_up_username_hint">Kullanıcı adı seç</string>
+    <string name="sign_up_password_hint">Şifre seç</string>
+    <string name="sign_up_email_hint">E-mail adresinizi yazınız</string>
+    <string name="sign_up_fullname_hint">Ad ve Soyadınızı yazınız</string>
+    <string name="sign_up_agree_terms">Kullanım Şartlarını kabul ediyorum</string>
+    <string name="sign_up_button">Kayıt Ol</string>
+    <string name="sign_up_validation_error">Kayıt olmak için tüm alanları doldurunuz</string>
+    <string name="sign_up_terms_warning">Kayıt olabilmek için hizmet şartlarını kabul etmelisiniz.</string>
+
+    <!-- Login -->
+    <string name="login_username_hint">Kullanıcı adı</string>
+    <string name="login_password_hint">Şifre</string>
+    <string name="login_button">Giriş Yap</string>
+    <string name="login_sign_up_button">E-mail ile Kayıt Ol</string>
+    <string name="login_forgot_password">Şifreni mi Unuttun?</string>
+    <string name="login_forgot_password_alert">Kayıt olduğunuz e-mail adresini giriniz</string>
+    <string name="login_forgot_password_success">Şifreni sıfırlamak için bir e-mail gönderdik</string>
+
+    <!-- Home tabs -->
+    <string name="home_tab_browse">Ana Sayfa</string>
+    <string name="home_tab_likes">Bildirimler</string>
+    <string name="home_tab_activity">Keşfet</string>
+    <string name="home_tab_account">Profil</string>
+    <string name="options_dots">•••</string>
+
+    <!-- Browse -->
+    <string name="browse_search_warning">Birşeyler yazmalısın!</string>
+    <string name="browse_chat_error">Sohbeti görebilmek için giriş yapmalısın. Giriş yapmak ister misin? </string>
+    <string name="browse_search_hint">Ne istersen ara…</string>
+
+    <!-- My Likes -->
+    <string name="my_likes_screen_title">Keşfet</string>
+    <string name="my_likes_empty_screen_description">Favorileriniz burada gösterilecek.</string>
+
+    <!-- Activity -->
+    <string name="activity_remove_success">Kaldırıldı!</string>
+    <string name="activity_screen_title">Bildirimler</string>
+    <string name="activity_delete_description">Silmek için basılı tut</string>
+
+    <!-- Account -->
+    <string name="account_logout_warning_title">Çıkmak istediğine emin misin?</string>
+    <string name="account_logout_loading">Çıkış yapılıyor…</string>
+    <string name="account_verified">Evet</string>
+    <string name="account_not_verified">Hayır</string>
+    <string name="account_screen_title">Hesabım</string>
+    <string name="account_joined_title">Katıldı:</string>
+    <string name="account_verified_title">Onaylı Profil:</string>
+    <string name="account_edit_profile_button">Profil Düzenle</string>
+    <string name="account_feedbacks_button">Geri Bildirimler</string>
+    <string name="account_logout_button">Çıkış</string>
+    <string name="account_my_ads_section_title">İlanlarım</string>
+
+    <!-- Sell / Edit item -->
+    <string name="sell_edit_editing_title">Ürün Düzenle</string>
+    <string name="sell_edit_selling_title">Ürün Sat</string>
+    <string name="sell_edit_video_error">Video Oynatılamıyor</string>
+    <string name="sell_edit_video_too_long_error">Videonuz %s saniyeden daha fazla. Lütfen daha kısa bir video seçiniz</string>
+    <string name="sell_edit_default_condition">@string/filter_condition_new</string>
+    <string name="sell_edit_input_validation_error">Tüm detayları eklediğinizden emin olun</string>
+    <string name="sell_edit_delete_alert_title">Bu ürünü silmek istediğinizden emin misiniz?</string>
+    <string name="sell_edit_delete_ok">Ürün Sil</string>
+    <string name="sell_edit_submit_success">Ürünün başarıyla yayınlandı!</string>
+    <string name="sell_edit_get_location_failure">Konumunuz alınamadı. Ayarlar\'a gidin ve Konum Hizmetinin etkinleştirildiğinden emin olun, aksi takdirde Ürününüz yayınlanamayacaktır.</string>
+    <string name="sell_edit_picture_failure">Fotoğraf yüklenirken hata oluştu</string>
+    <string name="sell_edit_location_failure">Lokasyon yüklenemedi!</string>
+    <string name="sell_edit_item_delete_success">Ürününüz silindi!</string>
+    <string name="sell_edit_subcategory_edit">Alt Kategori</string>
+    <string name="sell_edit_add_images_title">Resim ekle</string>
+    <string name="sell_edit_image_text_placeholder">+\nRESİM</string>
+    <string name="sell_edit_add_video_title">Video ekle</string>
+    <string name="sell_edit_video_text_placeholder">+\nVIDEO</string>
+    <string name="sell_edit_details_title">Detaylar</string>
+    <string name="sell_edit_category_title">Kategori</string>
+    <string name="sell_edit_title">Başlık</string>
+    <string name="sell_edit_title_hint">Satış Başlığı </string>
+    <string name="sell_edit_price_title">Fiyat</string>
+    <string name="sell_edit_price_hint">Ürünün için fiyat belirle</string>
+    <string name="sell_edit_condition_title">Durumu</string>
+    <string name="sell_edit_location_title">Lokasyon</string>
+    <string name="sell_edit_choose_location_placeholder">Lokasyon Seç (opsiyonel)*</string>
+    <string name="sell_edit_location_description">*Bir konum seçmezseniz, mevcut konumunuz varsayılan olarak ayarlanacaktır</string>
+    <string name="sell_edit_description_title">Açıklama</string>
+    <string name="sell_edit_description_hint">Ürününüz hakkında açıklama yazınız</string>
+    <string name="sell_edit_delete_button">Sil</string>
+
+    <!-- Categories -->
+    <string name="categories_screen_title">Kategori Seç</string>
+    <string name="city_screen_title">Şehir Seç</string>
+    <string name="type_screen_title">Tür Seç</string>
+    <string name="categories_item_text_placeholder">Yükleniyor…</string>
+    <string name="categories_sort_by_recent_title">Son</string>
+    <string name="categories_sort_by_lowest_price_title">Düşük Fiyat</string>
+    <string name="categories_sort_by_highest_price_title">Yüksek Fiyat</string>
+    <string name="categories_sort_by_most_liked_title">En Popüler</string>
+    <string name="categories_report_type_ad">Ürün</string>
+    <string name="categories_report_type_user">Kullanıcı</string>
+    <string name="categories_all_title">Hepsi</string>
+    <string name="categories_done_error">Kategori Seç</string>
+    <string name="city_done_error">Şehir Seç</string>
+
+
+    <!--type-->
+    <string name="type_all">Hepsi</string>
+    <string name="type_sell">Sat</string>
+    <string name="type_rent">Kirala</string>
+    <string name="type_exchange">Takas</string>
+    <string name="type_gift">Hediye</string>
+
+
+    <!-- Categories -->
+    <string name="cities_all_title">Hepsi</string>
+
+    <!-- Subcategories -->
+    <string name="subcategories_selection_empty">Alt Kategori Seç</string>
+    <string name="subcategories_select_title">Seçilen Alt Kategori</string>
+    <string name="subcategories_empty_for_current_category">Alt Kategori bulunamadı.</string>
+
+    <!-- Ads list -->
+    <string name="ads_list_search_empty">Hiç ürün bulunamadı. Başka bir arama yapın.</string>
+    <string name="ads_list_filter_location_loading">yükleniyor…</string>
+    <string name="ads_list_sort_by_title">SIRALA</string>
+    <string name="ads_list_default_sort_by">@string/categories_sort_by_recent_title</string>
+    <string name="ads_list_category_filter_title">KATEGORİ</string>
+    <string name="ads_list_search_validation_error">Birşeyler yazmalısın!</string>
+    <string name="ads_list_distance_formatted">%s ŞURDAN</string>
+
+    <!-- Ad Details -->
+    <string name="ad_details_screen_title">Detayları Ekle</string>
+    <string name="ad_details_video_watch_button">Video: İzle</string>
+    <string name="ad_details_video_not_available">Video: N/A</string>
+    <string name="ad_details_options_alert_title">Seçeneğini Seç</string>
+    <string name="ad_details_report_ad_option">Ürünü raporla</string>
+    <string name="ad_details_share_option">Paylaş</string>
+    <string name="ad_details_share_chooser_title">Paylaşılıyor…</string>
+    <string name="ad_details_share_description">Bunu bir bakmalısın: \'%s\' on #neararsanvar</string>
+    <string name="ad_details_user_block_message">Üzgünüz, @%s seni bloke etti. Bu kullanıcıya artık mesaj gönderemezsin.</string>
+    <string name="ad_details_chat_error">Sohbeti görebilmek için giriş yapmalısın. Giriş yapmak ister misin?</string>
+    <string name="ad_details_user_liked_your_ad">\@%s Ürününüzü beğendi: %s</string>
+    <string name="ad_details_like_ad_error">Bu ürünü beğenebilmek için giriş yapmalısınız. Giriş yapmak ister misin?</string>
+    <string name="ad_details_comment_error">Yorum yapabilmek için giriş yapmalısınız. Giriş yapmak ister misin?</string>
+    <string name="ad_details_feedback_already_sent_error">Zaten bu satıcıya bir geri bildirim gönderdiniz!</string>
+    <string name="ad_details_comment_login_error">Geri bildirim gönderebilmek için giriş yapmalısınız. Giriş yapmak ister misin?</string>
+    <string name="ad_details_post_a_comment_button">YORUM YAP</string>
+    <string name="ad_details_send_feedback_button">Geribildirim Gönder</string>
+    <string name="ad_details_verified_title">Onaylandı:</string>
+    <string name="ad_details_joined_title">Katıldı:</string>
+    <string name="ad_details_seller_section_title">SATICI</string>
+    <string name="ad_details_location_title">Lokasyon</string>
+    <string name="ad_details_subcategory_title">Alt Kategori</string>
+    <string name="ad_details_category_title">Kategori</string>
+    <string name="ad_details_condition_title">Durum</string>
+
+    <!-- Chats -->
+    <string name="chats_screen_title">Sohbetler</string>
+    <string name="chats_sent_message_title">Sen :</string>
+    <string name="chats_user_block_error">Üzgünüz, @%s seni bloke etti. Bu kullanıcıya mesaj gönderemezsin.</string>
+    <string name="chats_item_text_placeholder">yükleniyor…</string>
+
+    <!-- Comments -->
+    <string name="comments_screen_title">Yorumlar</string>
+    <string name="comments_input_validation_error">Bir şeyler yazmalısın!</string>
+    <string name="comments_user_commented">\@%s Ürününe yorum yaptı: \'%s\'</string>
+    <string name="comments_text_placeholder">yükleniyor…</string>
+    <string name="comments_send_button">Gönder</string>
+    <string name="comments_input_hint">buraya yazınız…</string>
+
+    <!-- Distance map -->
+    <string name="distance_map_distance">%s km yakınında olanlar</string>
+    <string name="distance_map_apply">Uygula</string>
+    <string name="distance_map_set_distance">Mesafe Ayarla</string>
+    <string name="distance_map_distance_range">Konumuna 80 km yakın olanlar</string>
+    <string name="distance_map_search_hint">Bir lokasyon arayın</string>
+
+    <!-- Edit Profile -->
+    <string name="edit_profile_screen_title">Profil Düzenle</string>
+    <string name="edit_profile_change_photo_button">Profil Resmini Değiştir</string>
+    <string name="edit_profile_username_title">Kullanıcı Adı</string>
+    <string name="edit_profile_full_name_title">Tam Adınız</string>
+    <string name="edit_profile_website_title">Website</string>
+    <string name="edit_profile_email_title">email</string>
+    <string name="edit_profile_website_hint">ex: http://mywebsite.com</string>
+    <string name="edit_profile_email_hint">ex: example@email.com</string>
+    <string name="edit_profile_about_me_title">Hakkımda</string>
+    <string name="edit_profile_terms_of_service_title">Kullanım Şartları</string>
+    <string name="edit_profile_input_validation_error">En az bir kullanıcı adı ve tam adınızı girmelisiniz!</string>
+    <string name="edit_profile_submit_success">Profiliniz güncellendi!</string>
+    <string name="edit_profile_reset_password_description">Bu uygulamaya kaydolmak için kullandığınız geçerli e-posta adresini yazın</string>
+    <string name="edit_profile_reset_password_title">ŞİFRE SIFIRLA</string>
+    <string name="edit_profile_reset_password_success">Şifrenizi sıfırlamak için e-mail adresinize bir mail gönderdik !</string>
+
+    <!-- Feedbacks -->
+    <string name="feedbacks_screen_title">Geribildirimler</string>
+    <string name="feedbacks_text_placeholder">yükleniyor…</string>
+
+    <!-- Inbox -->
+    <string name="inbox_input_validation_error">Bir şey yazmalı veya resim göndermelisin!</string>
+    <string name="inbox_unblock_user_title">Engel Kaldır</string>
+    <string name="inbox_block_user_title">Engelle</string>
+    <string name="inbox_options_alert_title">Seçenek seç</string>
+    <string name="inbox_report_user_option">Kullanıcı Raporla</string>
+    <string name="inbox_block_user_option">Engelle</string>
+    <string name="inbox_block_success">Bu Kullanıcıyı engellediniz, artık şuradan Sohbet mesajı almayacaksınız: @%s</string>
+    <string name="inbox_unblocked_user">Engeli Kaldırdınız @%s</string>
+    <string name="inbox_delete_chat_option">Sohbet Sil</string>
+    <string name="inbox_delete_chat_alert_title">Bu Sohbeti silmek istediğinizden emin misiniz? @%s  bu mesajları da göremeyecek.</string>
+    <string name="inbox_image_message_tap_to_close">Kapatmak için dokun</string>
+    <string name="inbox_message_sending_loading">Gönderiliyor…</string>
+    <string name="inbox_image_sending_loading">Resim gönderiliyor…</string>
+    <string name="inbox_text_placeholder">yükleniyor…</string>
+    <string name="inbox_type_your_message">mesajınızı yazın</string>
+    <string name="inbox_send_button">Gönder</string>
+
+    <!-- Report -->
+    <string name="report_screen_title">Rapor</string>
+    <string name="report_title_formatted">Rapor %s</string>
+    <string name="report_alert_warning_title">Bunu% s şu nedenle bildirmek istediğinizden emin misiniz: \ n% s?</string>
+    <string name="report_warning_yes">Evet, eminim</string>
+    <string name="report_success">Bu% s bildirdiğiniz için teşekkürler. 24 saat içinde inceleyeceğiz</string>
+    <string name="report_automatically_reporting">**Satıcısını bildirdikten sonra otomatik olarak raporlanır**</string>
+
+    <!-- Send feedback -->
+    <string name="send_feedback_screen_title">Geribildirim Gönder</string>
+    <string name="send_feedback_text_placeholder">yükleniyor…</string>
+    <string name="send_feedback_send_button">Gönder</string>
+    <string name="send_feedback_description">Derecelendir</string>
+    <string name="send_feedback_write_review_title">kısa bir inceleme yaz</string>
+    <string name="send_feedback_to_username">şu kullanıcıya @%s</string>
+    <string name="send_feedback_input_validation_error">En az 1 yıldız vermeli ve kısa bir yorum yazmalısınız!</string>
+    <string name="send_feedback_success">Teşekkürler, geri bildiriminiz gönderildi!</string>
+
+    <!-- Sort by -->
+    <string name="sort_by_screen_title">Sırala</string>
+
+    <!-- User Details -->
+    <string name="user_profile_text_placeholder">yükleniyor…</string>
+    <string name="user_profile_joined_title">Katıldı:</string>
+    <string name="user_profile_verified_title">Onaylandı:</string>
+    <string name="user_profile_check_feedbacks_button">geri bildirimleri kontrol et</string>
+    <string name="user_profile_ads_posted_title">GÖNDERİLER</string>
+    <string name="user_profile_bio_error">Biyografi henüz oluşturulmadı</string>
+    <string name="user_profile_verified_yes">Onaylı Profil: Evet</string>
+    <string name="user_profile_verified_no">Onaylı Profil: Hayır</string>
+    <string name="user_profile_loading_ads">Ürünler Yükleniyor…</string>
+    <string name="choose_the_way_source_to_upload_picture">Resim yüklemek için bir yol seç</string>
+    <string name="loading">Yükleniyor...</string>
+</resources>

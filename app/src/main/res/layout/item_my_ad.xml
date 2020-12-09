@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ima_picture_iv"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:padding="0.5dp"
+        android:background="@drawable/round_circle_line"
+        android:src="@drawable/neararsanvar" />
+
+    <LinearLayout
+        android:id="@+id/ima_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/ima_picture_iv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ima_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:text="Toyota" />
+
+        <TextView
+            android:id="@+id/ima_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:drawableEnd="@drawable/time_ic"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/blackTextColor"
+            android:textSize="10sp"
+            tools:text="6 sec. ago" />
+
+        <TextView
+            android:id="@+id/ima_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:textColor="@color/blackTextColor"
+            android:textSize="12sp"
+            tools:text="7000" />
+    </LinearLayout>
+
+
+</RelativeLayout>

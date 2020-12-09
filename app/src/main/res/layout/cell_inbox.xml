@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/receiverCell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/rDateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:text="@string/inbox_text_placeholder"
+            android:textColor="@color/blackTextColor"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/rMessTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner_receiver"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="start"
+            android:padding="8dp"
+            android:paddingEnd="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/inbox_text_placeholder"
+            android:textColor="@color/blackTextColor"
+            android:textSize="12sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rImageCard"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="15dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="start">
+
+            <ImageView
+                android:id="@+id/rImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/senderCell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:visibility="invisible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sDateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:text="@string/inbox_text_placeholder"
+                android:textColor="@color/blackTextColor"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/sMessTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/rounded_corner_sender_cell_colour"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="8dp"
+                android:gravity="end"
+                android:layout_marginEnd="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/inbox_text_placeholder"
+                android:textColor="@color/blackTextColor"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sImageCard"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="end">
+
+            <ImageView
+                android:id="@+id/sImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

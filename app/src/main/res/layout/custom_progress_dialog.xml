@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#AA000000"
+    android:orientation="vertical">
+
+   <!-- <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_8sdp">-->
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/round_corner_white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/load"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Please Wait..."
+                android:layout_marginBottom="5dp"
+                android:textSize="18dp"
+                android:layout_gravity="center" />
+
+
+        </LinearLayout>
+
+
+   <!-- </androidx.cardview.widget.CardView>-->
+</RelativeLayout>

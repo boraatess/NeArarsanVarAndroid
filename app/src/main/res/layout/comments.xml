@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".Comments">
+
+    <RelativeLayout
+        android:id="@+id/commTopView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/commAdNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/comments_text_placeholder"
+            android:visibility="invisible"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/commTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/comments_screen_title"
+            android:textColor="@color/black"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/commBackButt"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignBottom="@+id/commAdNameTxt"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/back_id" />
+
+        <Button
+            android:id="@+id/commRefreshButt"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignBottom="@+id/commAdNameTxt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/refresh_button" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/commListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/commLine"
+        android:layout_below="@+id/commTopView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:divider="#eee"
+        android:dividerHeight="2dp" />
+
+
+    <View
+        android:id="@+id/commLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/llMessage"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:orientation="horizontal" />
+
+
+    <LinearLayout
+        android:id="@+id/llMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/commCommentEditText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/comments_input_hint"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/blackTextColor"
+            android:textSize="11sp" />
+
+
+        <Button
+            android:id="@+id/hideKeyboard"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/hide_keybord" />
+
+
+        <Button
+            android:id="@+id/commSendButt"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comments_send_button"
+            android:textAllCaps="false"
+            android:textColor="@color/blackTextColor" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

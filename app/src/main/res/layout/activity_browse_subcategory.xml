@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ads.activities.BrowseSubcategoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/hTopView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/abs_categoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Category"/>
+
+
+        <ImageView
+            android:id="@+id/abs_back"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_id"/>
+
+
+        <!--
+        <ImageView
+            android:id="@+id/hChatButt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:padding="10dp"
+            android:src="@drawable/chat_square_icon" />
+
+
+
+        <TextView
+            android:id="@+id/appNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="CLASSIFIER"/>
+        -->
+
+        <!-- <android.support.v7.widget.AppCompatEditText
+             android:id="@+id/hSearchTxt"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_toStartOf="@+id/hChatButt"
+             android:backgroundTint="#f2f2f2"
+             android:gravity="center"
+             android:hint="@string/browse_search_hint"
+             android:imeOptions="actionSearch"
+             android:inputType="none"
+             android:maxLines="1"
+             android:paddingStart="10dp"
+             android:paddingEnd="10dp"
+             android:paddingBottom="16dp"
+             android:singleLine="true"
+             android:textColor="@color/whiteTextColor"
+             android:textColorHint="@color/inputHint"
+             android:textSize="14sp" />-->
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/abs_subcategories_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hTopView"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

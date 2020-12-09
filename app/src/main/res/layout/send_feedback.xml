@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/send_feedback"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/grayBg"
+    tools:context=".SendFeedback">
+
+    <RelativeLayout
+        android:id="@+id/sfTopView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/sfUsernameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/send_feedback_text_placeholder"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/sfBackButt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/back_id"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/sfSendButt"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignTop="@+id/sfBackButt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="10dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@android:color/transparent"
+            android:text="@string/send_feedback_send_button"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/sfTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/sfSendButt"
+            android:layout_alignBottom="@+id/sfSendButt"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/send_feedback_screen_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sfTopView"
+        android:background="@color/main_color"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/send_feedback_description"
+        android:textColor="@color/darkGrayTextColor"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:id="@+id/starsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp">
+
+        <Button
+            android:id="@+id/starButt1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/empty_stars" />
+
+        <Button
+            android:id="@+id/starButt2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/starButt1"
+            android:layout_margin="2dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/empty_stars" />
+
+        <Button
+            android:id="@+id/starButt3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/starButt2"
+            android:layout_margin="2dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/empty_stars" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/starButt3"
+            android:layout_margin="2dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/empty_stars"/>
+
+        <Button
+            android:id="@+id/starButt4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/starButt3"
+            android:layout_margin="2dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/empty_stars" />
+
+        <Button
+            android:id="@+id/starButt5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/starButt4"
+            android:layout_margin="2dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/empty_stars" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/starsLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/send_feedback_write_review_title"
+        android:textColor="@color/darkGrayTextColor"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/sfReviewTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/whiteTextColor"
+        android:capitalize="sentences"
+        android:ems="10"
+        android:gravity="top|center_vertical"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColor="@color/blackTextColor"
+        android:textSize="12sp" />
+</RelativeLayout>

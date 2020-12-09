@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/aquare_border">
+
+    <ImageView
+        android:id="@+id/ial_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/neararsanvar" />
+
+
+    <LinearLayout
+        android:id="@+id/llDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ial_image_iv"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/ial_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="3"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/loading"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:text="Toyota Auris" />
+
+
+        <TextView
+            android:id="@+id/ial_condition_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="3"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/loading"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            tools:text="Toyota Auris" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/llDetails"
+        android:background="@color/blackTextColor" />
+
+
+    <LinearLayout
+        android:id="@+id/llLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/round_circle_line"
+            android:padding="1dp" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ial_price_tv"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/price_ribbon"
+                android:ellipsize="end"
+                android:gravity="center|end"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                tools:text="$ 14 000"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imgGift"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical|center" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

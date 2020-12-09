@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ad_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ads.activities.AdDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/aad_back_iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_id" />
+
+        <TextView
+            android:id="@+id/aad_toolbar_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/ad_details_screen_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+
+        <Button
+            android:id="@+id/aad_options_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:padding="8dp"
+            android:text="@string/options_dots"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackTextColor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A39E9E">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#2f6bcc"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/rounded_layout"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="36dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/aad_avatar_iv"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/round_circle_line"
+                                android:padding="1.5dp"
+                                android:src="@drawable/neararsanvar" />
+
+                            <!--&lt;!&ndash;android:id="@+id/aad_date_tv"&ndash;&gt;-->
+                            <TextView
+                                android:id="@+id/aad_date_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:drawableStart="@drawable/ad_details_time"
+                                android:drawablePadding="8dp"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:textColor="@color/grayTextColor"
+                                android:textSize="12sp"
+                                tools:text="9 JUL 2018" />
+
+                        </LinearLayout>
+
+
+                        <!--changes visibility gon
+                <TextView
+                    android:id="@+id/aad_play_video_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:drawableStart="@drawable/video_icon"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:src="@drawable/video_icon"
+                    android:text="@string/ad_details_video_watch_button"
+                    android:textColor="@color/grayTextColor"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+                -->
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/aad_like_iv"
+                                android:layout_width="64dp"
+                                android:layout_height="64dp"
+                                android:layout_gravity="end"
+                                android:padding="11dp"
+                                android:src="@drawable/no_like" />
+
+
+                            <TextView
+                                android:id="@+id/aad_likes_tv"
+                                android:layout_width="64dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                tools:text="4530" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/separator" />
+
+
+                    <TextView
+                        android:id="@+id/aad_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textColor="@color/blackTextColor"
+                        android:textSize="17sp"
+                        tools:text="Loading" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/separator" />
+
+
+                    <TextView
+                        android:id="@+id/aad_description_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="Loading"
+                        android:textColor="@color/blackTextColor"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/separator" />
+
+
+                    <TextView
+                        android:id="@+id/aad_city_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:drawableStart="@drawable/loc_addres"
+                        android:drawablePadding="16dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/ad_details_location_title"
+                        android:textColor="@color/blackTextColor"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/separator" />
+
+
+                    <TextView
+                        android:id="@+id/aad_condition_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_alignParentStart="true"
+                        android:drawableStart="@drawable/type_big"
+                        android:drawablePadding="16dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="Type"
+                        android:textColor="@color/blackTextColor"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/separator" />
+
+
+                    <TextView
+                        android:id="@+id/aad_category_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:drawableStart="@drawable/big_category"
+                        android:drawablePadding="16dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/ad_details_category_title"
+                        android:textColor="@color/blackTextColor"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/separator" />
+
+
+                    <TextView
+                        android:id="@+id/aad_subcategory_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:drawableStart="@drawable/big_subcategory"
+                        android:drawablePadding="16dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/ad_details_subcategory_title"
+                        android:textColor="@color/blackTextColor"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/separator" />
+
+                    <!--
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:visibility="gone">
+
+                        <FrameLayout
+                            android:id="@+id/aad_avatar_fl"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp">
+
+
+                            <ImageView
+                                android:id="@+id/aad_chat_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/chat_red_ic" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/aad_username_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_toEndOf="@+id/aad_avatar_fl"
+                            android:textColor="@color/blackTextColor"
+                            android:textSize="17sp"
+                            tools:text="Mark Middleton" />
+
+                        <TextView
+                            android:id="@+id/aad_joined_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/aad_username_tv"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@+id/aad_avatar_fl"
+                            android:text="@string/ad_details_joined_title"
+                            android:textColor="@color/grayTextColor" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/aad_joined_title_tv"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/aad_joined_title_tv"
+                            android:singleLine="true"
+                            android:textColor="@color/blackTextColor"
+                            tools:text="2 days ago" />
+
+                        <TextView
+                            android:id="@+id/aad_verified_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/aad_joined_title_tv"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_toEndOf="@+id/aad_avatar_fl"
+                            android:text="@string/ad_details_verified_title"
+                            android:textColor="@color/grayTextColor" />
+
+                        <TextView
+                            android:id="@+id/aad_verified_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/aad_verified_title_tv"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/aad_joined_title_tv"
+                            android:singleLine="true"
+                            android:textColor="@color/blackTextColor"
+                            tools:text="Yes" />
+                    </RelativeLayout>
+                    -->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/aad_sendmessage_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:background="@color/darkGrayTextColor"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="Send Message"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/aad_feedback_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/gray"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="Send Feedback"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/aad_dots_iv"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/dots1" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="110dp"
+                    android:layout_marginEnd="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ad_details_price" />
+
+                <TextView
+                    android:id="@+id/aad_price_tv"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    tools:text="2.500 tl" />
+
+
+                <ImageView
+                    android:id="@+id/gift"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical|center"
+                    android:visibility="gone" />
+
+
+            </FrameLayout>
+
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

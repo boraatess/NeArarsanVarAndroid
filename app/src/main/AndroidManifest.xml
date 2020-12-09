@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.application.android.neararsanvar">
+    <!-- permissions -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- For Push Notifications -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <permission
+        android:name="com.application.android.neararsanvar.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- IMPORTANT: Replace "classifier.carboncodetechnology.com.classifier" with your own app's package name! -->
+    <uses-permission android:name="com.application.android.neararsanvar.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.application.android.neararsanvar.utils.Configs"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/neararsanvar"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:replace="android:supportsRtl">
+        <activity android:name="com.application.android.neararsanvar.ads.activities.BrowseSubcategoryActivity"></activity>
+        <activity android:name="com.application.android.neararsanvar.ads.activities.LikesActivity" />
+        <activity
+            android:name="com.application.android.neararsanvar.landing.SplashScreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.application.android.neararsanvar.landing.TermsOfUse"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.application.android.neararsanvar.landing.SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.landing.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.filters.TypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.home.activities.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.application.android.neararsanvar.wizard.WizardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.selledit.activities.SellEditItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.ads.activities.AdsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.DistanceMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.filters.CategoriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.filters.SubcategoriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.filters.CityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.filters.SortByActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.ReportAdOrUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.Comments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.ads.activities.AdDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.WatchVideo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.FullScreenPreview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.SendFeedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.Chats"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.InboxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.Feedbacks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.application.android.neararsanvar.UserProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.application.android.neararsanvar.MapActivity"
+            android:screenOrientation="portrait" /> <!-- file provider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider> <!-- For Google Maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <!-- For Facebook SDK -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <!-- IMPORTANT: Replace "579429182800" with your own GCM Sender Id! -->
+
+        <meta-data
+            android:name="com.parse.push.gcm_sender_id"
+            android:value="id:579429182800" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Replace "classifier.carboncodetechnology.com.classifier" with your own app's package name! -->
+                <category android:name="com.application.android.neararsanvar" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+                <action android:name="com.parse.push.intent.DELETE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

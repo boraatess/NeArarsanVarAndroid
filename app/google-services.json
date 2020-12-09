@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "579429182800",
+    "firebase_url": "https://classifier-8f242.firebaseio.com",
+    "project_id": "classifier-8f242",
+    "storage_bucket": "classifier-8f242.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579429182800:android:7d55250373fa79270dd055",
+        "android_client_info": {
+          "package_name": "com.application.android.neararsanvar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579429182800-b3hnkvuhlniicragjdu34h92ssrrf7qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw_-yVuPpROa_Tz62QxFqRXyShipvJ2ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579429182800-b3hnkvuhlniicragjdu34h92ssrrf7qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
